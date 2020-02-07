@@ -2,4 +2,4 @@
 dkdkdkdk
 =======
 라스트에서 씀
->>>>>>> origin/branch
+>>>>>>> last
