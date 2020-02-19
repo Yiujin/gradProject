@@ -1,0 +1,4 @@
+jpg 파일만 됩니다.
+사진 이름을 sample_image 로 바꾸고
+Edge.py 실행하면 Result/Edge 폴더에 3장 생깁니다요.
+BlurMovie.py 실행하면 Result/Blur 폴더에  블러처리하는 동영상이 생깁니다요.
