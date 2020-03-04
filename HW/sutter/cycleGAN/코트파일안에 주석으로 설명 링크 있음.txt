@@ -1,0 +1,5 @@
+모듈설명은 ipynb 파일 안에 주석으로 
+
+전체 코드 -> https://machinelearningmastery.com/cyclegan-tutorial-with-keras/
+
+테스트 데이터셋도 저기가면 받을수 있음

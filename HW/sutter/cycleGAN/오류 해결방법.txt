@@ -1,0 +1,5 @@
+module 'tensorflow' has no attribute 'get_default_graph' 오류
+
+tensorflow 와 keras 버젼이 안맞아서 생기는 오류
+
+tensorflow 를 1.4 버젼으로 다운 또는 keras 최신으로 업데이트
