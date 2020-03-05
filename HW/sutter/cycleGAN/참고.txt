@@ -1,0 +1,13 @@
+모듈설명은 ipynb 파일 안에 주석으로 
+
+전체 코드 -> https://machinelearningmastery.com/cyclegan-tutorial-with-keras/
+
+테스트 데이터셋도 저기가면 받을수 있음
+
+참고
+conv2d :  https://m.blog.naver.com/PostView.nhn?blogId=tlaja&logNo=220868600881&proxyReferer=https%3A%2F%2Fwww.google.com%2F
+	 https://books.google.co.kr/books?id=6RrBDwAAQBAJ&pg=PA175&lpg=PA175&dq=conv2d+%EC%9D%B4%EB%AF%B8%EC%A7%80+%EB%8B%A4%EC%9A%B4%EC%83%98%ED%94%8C%EB%A7%81&source=bl&ots=I83a6mgtvd&sig=ACfU3U2Ulhm4cQAnGpQqqaQWSvTYF19v3A&hl=ko&sa=X&ved=2ahUKEwirjvbD_ILoAhVXed4KHbn9BKcQ6AEwAHoECAoQAQ#v=onepage&q=conv2d%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EB%8B%A4%EC%9A%B4%EC%83%98%ED%94%8C%EB%A7%81&f=false
+	https://zzsza.github.io/data/2018/02/23/introduction-convolution/
+resnetblock : https://datascienceschool.net/view-notebook/958022040c544257aa7ba88643d6c032/
+	     https://dnddnjs.github.io/cifar10/2018/10/09/resnet/
+
