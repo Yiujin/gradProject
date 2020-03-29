@@ -1,0 +1,39 @@
+현존하는 기술만으로는 사진을 만화로 바꾸는데 문제가있음
+1. 만화만의 독특한 단순성과 추상성
+2. 만화의 이미지는 명확한 edge 와 부드러운 색감, 간단한 textures 라는 특징을가짐
+현존하는 texture descriptor based loss functions 으로는 힘듬
+
+따라서 두가지의 적합한 loss 를 찾아냄
+1. semantic content loss 
+2. edge promoting adversarial loss ( 부드러운 edge 를 만들기 위함) discriminator network 에 사용
+
+추가로 효율적인 train 방법을 사용
+
+cartoon stylization 의 목표는  content 가 변하지 않게 유지하며 사진의 manifold 를
+만화의 manifold 로 변환하는것
+
+2.related work
+ -> 다른 방법을 이용한 비슷한 시도들
+  (1) NPR
+  (2) Stylization with neural network (ex CNN,VGG)
+  (3) GAN , cycleGAN (GAN 은 paired image 라는 단점 이후 unpaired image로 발전된
+cycle GAN 은 cartoon 의 특징(high-level abstraction 과 clear edges) 을 제대로 구현하지 못함,
+train 에 상당한 시간이 필요함
+
+3. cartoonGAN
+ 1. 기존의 cycleGAN 의 lossfunction에 추가로 위의 content loss, 와 edge promotin adversarial loss등의
+loss function 을 추가로 구현한것 같음
+edge adversarial loss 의 경우 discriminator 에서 edge 가 전체 image 에서는 매우 적은 부분을 차지하기 때문에
+혼란이 생기는 경우가 생겨 이를 해결하는 방법 설명(3.2.1) 
+대충읽어보니 만화 이미지의 edge 를 일부로 흐리게 만든 이미지를 만들어 이를 추가로 discriminator 에 넣어 
+edge 가 흐린 사진은 만화가 아니라고 학습시킨것 같음
+(3.2.2) content loss -> 사진을 만화로 바꾸어도 content 는 유지되야됨 이를 측정하는 loss
+
+4. train data 및 다른 알고리즘과 성능 비교 (cycleGAN,cycleGAN+identity loss,cartoonGAN)
+
+5. 결론 및 future work
+
+결론은 위의 loss 들과 VGG network 등을 이용한 cartoonGAN은 효율적이고 high quility 인것 같다
+
+future work 위에서는 사진의 자연풍경등만을 했었는데 사람의 얼굴도 할수 있게끔할것이다
+확장해서 video 에도 적용할수 있도록 할 계획이다.
