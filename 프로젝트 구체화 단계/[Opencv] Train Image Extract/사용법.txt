@@ -1,0 +1,5 @@
+필요모듈 open cv
+저는 python -m pip install opencv-python 으로 설치했읍니다.
+
+source 디렉토리에 test_video.mp4 로 동영상 저장하세요.
+ImageMake.py 에서 x프레임마다 이미지 저장하는데 이 x 값 바꾸려면 step = 20 으로 되어있는 부분 바꾸면 됩니다.
